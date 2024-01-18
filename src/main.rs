@@ -23,7 +23,7 @@ fn build_redis_client() -> redis::Client {
         Ok(val) => val,
         Err(_) => {
             eprintln!("No password set");
-            "".to_string()
+            String::new()
         }
     };
 
